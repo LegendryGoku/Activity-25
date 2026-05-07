@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Number with While Loop</title>
+</head>
+<body>
+
+<h2>Random Numbers Generator</h2>
+<button onclick="generateNumbers()">Generate Numbers</button>
+
+<p id="output"></p>
+
+<script>
+
+function generateNumbers() {
+
+    let count = 1;
+    let result = "";
+
+    // while loop runs 5 times
+    while (count <= 5) {
+
+        // Random number between 1 and 50
+        let randomNumber = Math.floor(Math.random() * 50) + 1;
+
+        result += "Random Number " + count + ": " + randomNumber + "<br>";
+
+        count++;
+    }
+
+    document.getElementById("output").innerHTML = result;
+}
+
+</script>
+
+</body>
+</html>
