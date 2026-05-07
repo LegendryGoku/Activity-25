@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Data Types</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .box {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            box-shadow: 0 0 5px gray;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: navy;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript Data Types Example</h1>
+
+    <div class="box">
+        <button onclick="showDataTypes()">Show Data Types</button>
+
+        <p id="output"></p>
+    </div>
+
+    <script>
+
+        // -----------------------------
+        // let keyword
+        // let is used for variables
+        // whose value can be changed later
+        // -----------------------------
+
+        let studentName = "Aarav";
+        studentName = "Rahul"; // value changed
+
+        // -----------------------------
+        // const keyword
+        // const is used for variables
+        // whose value should NOT change
+        // -----------------------------
+
+        const collegeName = "ABC College";
+
+        // -----------------------------
+        // JavaScript Data Types
+        // -----------------------------
+
+        let age = 18; // Number
+        let name = "Aryan"; // String
+        let isStudent = true; // Boolean
+        let marks = null; // Null
+        let city; // Undefined
+        let fruits = ["Apple", "Mango", "Banana"]; // Array
+        let person = {
+            firstName: "Aryan",
+            lastName: "Sharma"
+        }; // Object
+
+        // Function to display all data types
+        function showDataTypes() {
+
+            document.getElementById("output").innerHTML =
+                "<b>let Variable:</b> " + studentName + "<br><br>" +
+
+                "<b>const Variable:</b> " + collegeName + "<br><br>" +
+
+                "<b>Number:</b> " + age + "<br>" +
+                "<b>String:</b> " + name + "<br>" +
+                "<b>Boolean:</b> " + isStudent + "<br>" +
+                "<b>Null:</b> " + marks + "<br>" +
+                "<b>Undefined:</b> " + city + "<br>" +
+                "<b>Array:</b> " + fruits + "<br>" +
+                "<b>Object:</b> " + person.firstName + " " + person.lastName;
+        }
+
+    </script>
+
+</body>
+</html>
