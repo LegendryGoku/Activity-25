@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions in JavaScript</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    h1 {
+        color: #333;
+
+
+    }
+    p {        
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    h2 {
+        color: #555;
+        padding: 0%.5em 0;
+    }
+   
+    
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        example {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Conditions in JavaScript</h1>
+    <p>In JavaScript, conditions are used to perform different actions based on different situations. The most common way to handle conditions is through the use of <code>if</code> statements.</p>
+    <h2>Using if Statements</h2>
+    <p>The <code>if</code> statement executes a block of code if a specified condition is true. Here's the basic syntax:</p>
+    <button onclick="showExample()">Show Example</button>
+    <div id="example"></div>
+    <script>
+function showExample() {
+    var ifMode = 19;
+    if (ifMode > 18) {
+        document.getElementById("example").innerHTML = "You are eligible to vote. ";
+    } else {
+        document.getElementById("example").innerHTML = "You are not eligible to vote. ";
+    }
+}
+
+    </script>
+
+</body>
+</html>
